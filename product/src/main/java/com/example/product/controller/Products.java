@@ -17,5 +17,9 @@ public class Products {
     public String ProductViewAll(){
         return "Product ViewAll Page";
     }
+    @PostMapping("/productsDelete")
+    public String ProductDelete(){
+        return "Product Delete Page";
+    }
 
 }
