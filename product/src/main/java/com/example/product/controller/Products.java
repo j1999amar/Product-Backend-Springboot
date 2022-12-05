@@ -13,5 +13,9 @@ public class Products {
     public String ProductSearch(){
         return "Product Search Page";
     }
+    @GetMapping("/productsViewAll")
+    public String ProductViewAll(){
+        return "Product ViewAll Page";
+    }
 
 }
