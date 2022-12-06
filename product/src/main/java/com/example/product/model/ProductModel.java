@@ -1,34 +1,38 @@
 package com.example.product.model;
 
+import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
+@Entity
+@Table(name = "products")
 public class ProductModel {
-    @Id
-    @GeneratedValue
+@Id
+@GeneratedValue
     private int id;
-    private int ProductCode;
-    private String ProductName;
-    private String ManuDate;
-    private String ExpDate;
-    private String Brand;
-    private String Price;
-    private String SellarName;
-    private String Distributor;
+    private int productCode;
+    private String productName;
+    private String manuDate;
+    private String expDate;
+    private String brand;
+    private String price;
+    private String sellarName;
+    private String distributor;
 
     public ProductModel() {
     }
 
     public ProductModel(int id, int productCode, String productName, String manuDate, String expDate, String brand, String price, String sellarName, String distributor) {
         this.id = id;
-        ProductCode = productCode;
-        ProductName = productName;
-        ManuDate = manuDate;
-        ExpDate = expDate;
-        Brand = brand;
-        Price = price;
-        SellarName = sellarName;
-        Distributor = distributor;
+        this.productCode = productCode;
+        this.productName = productName;
+        this.manuDate = manuDate;
+        this.expDate = expDate;
+        this.brand = brand;
+        this.price = price;
+        this.sellarName = sellarName;
+        this.distributor = distributor;
     }
 
     public int getId() {
@@ -40,66 +44,66 @@ public class ProductModel {
     }
 
     public int getProductCode() {
-        return ProductCode;
+        return productCode;
     }
 
     public void setProductCode(int productCode) {
-        ProductCode = productCode;
+        this.productCode = productCode;
     }
 
     public String getProductName() {
-        return ProductName;
+        return productName;
     }
 
     public void setProductName(String productName) {
-        ProductName = productName;
+        this.productName = productName;
     }
 
     public String getManuDate() {
-        return ManuDate;
+        return manuDate;
     }
 
     public void setManuDate(String manuDate) {
-        ManuDate = manuDate;
+        this.manuDate = manuDate;
     }
 
     public String getExpDate() {
-        return ExpDate;
+        return expDate;
     }
 
     public void setExpDate(String expDate) {
-        ExpDate = expDate;
+        this.expDate = expDate;
     }
 
     public String getBrand() {
-        return Brand;
+        return brand;
     }
 
     public void setBrand(String brand) {
-        Brand = brand;
+        this.brand = brand;
     }
 
     public String getPrice() {
-        return Price;
+        return price;
     }
 
     public void setPrice(String price) {
-        Price = price;
+        this.price = price;
     }
 
     public String getSellarName() {
-        return SellarName;
+        return sellarName;
     }
 
     public void setSellarName(String sellarName) {
-        SellarName = sellarName;
+        this.sellarName = sellarName;
     }
 
     public String getDistributor() {
-        return Distributor;
+        return distributor;
     }
 
     public void setDistributor(String distributor) {
-        Distributor = distributor;
+        this.distributor = distributor;
     }
 }
